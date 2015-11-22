@@ -9,15 +9,12 @@ export function activate(context: vscode.ExtensionContext) {
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
 	console.log('Congratulations, your extension "new-cmd" is now active!'); 
+	
+	let exec = require('child_process').exec;
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with  registerCommand
-	// The commandId parameter must match the command field in package.json
-	var disposable = vscode.commands.registerCommand('extension.sayHello', () => {
-		// The code you place here will be executed every time your command is executed
-
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World!');
+	var disposable = vscode.commands.registerCommand('extension.launchCmd', () => {
+		// execute launch of new command line
+		exec('start cmd /k cd ' + context.asAbsolutePath(''))
 	});
 	
 	context.subscriptions.push(disposable);

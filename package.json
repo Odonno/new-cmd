@@ -1,7 +1,7 @@
 {
 	"name": "new-cmd",
 	"description": "Launch a new command line that target the current workspace",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"publisher": "odonno",
 	"engines": {
 		"vscode": "^0.10.1"
@@ -10,13 +10,13 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.launchCmd"
+		"onCommand:extension.cmd"
 	],
 	"main": "./out/src/extension",
 	"contributes": {
 		"commands": [{
-			"command": "extension.launchCmd",
-			"title": "Launch cmd"
+			"command": "extension.cmd",
+			"title": "cmd"
 		}]
 	},
 	"scripts": {

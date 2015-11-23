@@ -12,7 +12,7 @@ export function activate(context: vscode.ExtensionContext) {
 	
 	let exec = require('child_process').exec;
 
-	var disposable = vscode.commands.registerCommand('extension.launchCmd', () => {
+	var disposable = vscode.commands.registerCommand('extension.cmd', () => {
 		// execute launch of new command line
 		exec('start cmd /k cd ' + vscode.workspace.rootPath);
 	});

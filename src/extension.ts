@@ -14,7 +14,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	var disposable = vscode.commands.registerCommand('extension.launchCmd', () => {
 		// execute launch of new command line
-		exec('start cmd /k cd ' + context.asAbsolutePath(''))
+		exec('start cmd /k cd ' + vscode.workspace.rootPath);
 	});
 	
 	context.subscriptions.push(disposable);

@@ -6,4 +6,5 @@ Launch a new command line that target the current workspace
 
 There is a list of commands you can use in VS Code :
 
-* Launch cmd
+* cmd
+  * launch a new command line targeting the current workspace

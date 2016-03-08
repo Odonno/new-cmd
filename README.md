@@ -17,6 +17,6 @@ Here is an example if we prefer use `cmder.exe` :
 ```
 // Place your settings in this file to overwrite default and user settings.
 {
-    "newCmd": "cmd.exe %rootPath"
+    "newCmd": "cmder.exe %rootPath"
 }
 ```
